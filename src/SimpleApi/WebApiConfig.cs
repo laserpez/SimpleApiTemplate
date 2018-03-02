@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
-namespace EmptyProject2
+namespace ProjectAPI
 {
     public static class WebApiConfig
     {
@@ -14,11 +11,7 @@ namespace EmptyProject2
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "{controller}",
-                defaults: new { controller="Home" }
-            );
+            config.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "{controller}");
         }
     }
 }

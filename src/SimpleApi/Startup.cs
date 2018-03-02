@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Http;
-using EmptyProject2;
+﻿using System.Web.Http;
+using Ninject;
 using Owin;
+using WebApiContrib.IoC.Ninject;
 
 namespace ProjectAPI
 {
@@ -13,7 +9,11 @@ namespace ProjectAPI
     {
         public void Configuration(IAppBuilder app)
         {
-            var httpConfiguration = new HttpConfiguration();
+            var kernel = new StandardKernel();
+            kernel.Bind<IMessageGenerator>().ToConstant(new FakeMessageGenerator());
+
+            var httpConfiguration = new HttpConfiguration {DependencyResolver = new NinjectResolver(kernel)};
+
             WebApiConfig.Register(httpConfiguration);
             app.UseWebApi(httpConfiguration);
         }

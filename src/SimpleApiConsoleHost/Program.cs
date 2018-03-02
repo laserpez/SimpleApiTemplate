@@ -6,7 +6,7 @@ namespace ConsoleHostProject
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             using (WebApp.Start<Startup>("http://localhost:12345"))
             {
