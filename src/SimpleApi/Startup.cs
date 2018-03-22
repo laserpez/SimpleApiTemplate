@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System.Configuration;
+using System.Web.Http;
 using Ninject;
 using Owin;
 using WebApiContrib.IoC.Ninject;
@@ -9,11 +10,15 @@ namespace ProjectAPI
     {
         public void Configuration(IAppBuilder app)
         {
+            var configStorageDb = ConfigurationManager.ConnectionStrings["ConfigStorageDb"].ConnectionString;
+
             var kernel = new StandardKernel();
-            kernel.Bind<IMessageGenerator>().ToConstant(new FakeMessageGenerator());
+            kernel.Bind<IStorage>()
+                .ToConstructor(ca => new ConfigurationStorage(configStorageDb))
+                .InSingletonScope();
 
             var httpConfiguration = new HttpConfiguration {DependencyResolver = new NinjectResolver(kernel)};
-
+            httpConfiguration.Filters.Add(new PayloadFilter());
             WebApiConfig.Register(httpConfiguration);
             app.UseWebApi(httpConfiguration);
         }
