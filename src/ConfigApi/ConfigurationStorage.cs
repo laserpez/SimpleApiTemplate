@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using ConfigApi.Extensions;
+using ConfigApi.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using Newtonsoft.Json;
-using ProjectAPI.Extensions;
 
-namespace ProjectAPI
+namespace ConfigApi
 {
-    using Models;
-
     public struct OpResult
     {
         public long Matched;

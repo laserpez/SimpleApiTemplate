@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using MongoDB.Bson;
+using ConfigApi.Models;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
-using Newtonsoft.Json;
-using ProjectAPI.Models;
 
-namespace ProjectAPI.Controllers
+namespace ConfigApi.Controllers
 {
     public class ConfigurationController : ApiController
     {

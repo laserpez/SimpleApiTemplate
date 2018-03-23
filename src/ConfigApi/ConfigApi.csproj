@@ -7,8 +7,8 @@
     <ProjectGuid>{88D3368B-DE07-4443-93E3-EE23C8497CDB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectAPI</RootNamespace>
-    <AssemblyName>ProjectAPI</AssemblyName>
+    <RootNamespace>ConfigApi</RootNamespace>
+    <AssemblyName>ConfigApi</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

@@ -1,6 +1,6 @@
 using MongoDB.Driver;
 
-namespace ProjectAPI.Extensions
+namespace ConfigApi.Extensions
 {
     internal static class MongoResultExtensions
     {

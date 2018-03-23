@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using ConfigApi;
 using MongoDB.Bson;
 using NUnit.Framework;
-using ProjectAPI;
-using ProjectAPI.Models;
 
 namespace Api.UnitTest
 {

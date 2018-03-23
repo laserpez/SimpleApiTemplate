@@ -6,7 +6,7 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 using Newtonsoft.Json;
 
-namespace ProjectAPI
+namespace ConfigApi
 {
     public class Header
     {

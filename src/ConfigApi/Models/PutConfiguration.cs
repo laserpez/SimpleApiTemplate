@@ -1,4 +1,4 @@
-﻿namespace ProjectAPI.Models
+﻿namespace ConfigApi.Models
 {
     public class PutConfiguration
     {

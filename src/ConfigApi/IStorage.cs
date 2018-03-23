@@ -1,8 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using ProjectAPI.Models;
+using ConfigApi.Models;
 
-namespace ProjectAPI
+namespace ConfigApi
 {
     public interface IStorage
     {

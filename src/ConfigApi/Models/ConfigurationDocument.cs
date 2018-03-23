@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace ProjectAPI.Models
+namespace ConfigApi.Models
 {
     public class ConfigurationDocument
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace ProjectAPI
+namespace ConfigApi
 {
     public static class WebApiConfig
     {

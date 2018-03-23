@@ -4,7 +4,7 @@ using Ninject;
 using Owin;
 using WebApiContrib.IoC.Ninject;
 
-namespace ProjectAPI
+namespace ConfigApi
 {
     public class Startup
     {

@@ -1,8 +1,7 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
-using ProjectAPI;
 
-namespace ConsoleHostProject
+namespace ConfigApi
 {
     internal class Program
     {

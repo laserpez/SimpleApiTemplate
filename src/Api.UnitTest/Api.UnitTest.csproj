@@ -49,9 +49,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\SimpleApi\SimpleApi.csproj">
+    <ProjectReference Include="..\ConfigApi\ConfigApi.csproj">
       <Project>{88d3368b-de07-4443-93e3-ee23c8497cdb}</Project>
-      <Name>SimpleApi</Name>
+      <Name>ConfigApi</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
